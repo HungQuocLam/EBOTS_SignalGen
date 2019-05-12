@@ -41,10 +41,26 @@ enum XavierGPIONumber{
 #define testPin					    gpio352
 #define	DLPTriggerPin				gpio250
 
+#define xtrigPin					gpio249
+
 #define HIGH 						1
 #define LOW 						0
 
-enum modes { OFF, ONCE, CONTINUOUS };              ///< The available LED modes -- static not useful here
+#define XTRIG_ACTIVE				LOW
+#define XTRIG_INACTIVE				HIGH
 
+#define DLP_PULSE_WIDTH				100 			// 100uS
+#define DLP_ACTIVE					HIGH
+#define DLP_INACTIVE				LOW
+
+#define rLaser_ACTIVE				HIGH
+#define rLaser_INACTIVE				LOW
+
+#define bLaser_ACTIVE				HIGH
+#define bLaser_INACTIVE				LOW
+
+#define TIMER_STAMP 				1000			// 1000nano second
+enum modes { OFF, ONCE, CONTINUOUS };              ///< The available LED modes -- static not useful here
+enum STSP_modes {STOP=0, START=1};
 
 #endif /* SIGGEN_DRIVER_H_ */
